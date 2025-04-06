@@ -1,14 +1,29 @@
 package com.xworkz.inheritence.inner;
 
 public class Sofa extends Plastic{
-    public void info() {
-        System.out.println("inside the info of plastic ");
-        weight();
-        color();
-        quality();
-        type();
+
+    @Override
+
+    public void quality() {
+        System.out.println("its of good quality");
+    }
+
+    @Override
+    public void type() {
+        System.out.println("Its is recyclable");
 
     }
+
+   @Override
+   public  void color() {
+        System.out.println("color of green");
+    }
+
+   @Override
+   public void weight() {
+        System.out.println("This Can Take More Weight");
+    }
+
 
 
 }

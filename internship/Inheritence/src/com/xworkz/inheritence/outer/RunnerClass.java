@@ -1,9 +1,8 @@
 package com.xworkz.inheritence.outer;
 
-import com.sun.org.apache.xpath.internal.operations.Or;
 import com.xworkz.inheritence.inner.*;
 
-import javax.print.Doc;
+
 
 public class RunnerClass {
     public static void main(String[] args) {
@@ -13,9 +12,7 @@ public class RunnerClass {
         vehicle.name();
         vehicle.speed();
 
-        System.out.println("Sub Class Car into picture");
-        Car car=new Car();
-        car.info();
+
 
         System.out.println("==========================  The reference type is parent ================================");
         Vehicle vehicle1=new Car();
@@ -29,9 +26,7 @@ public class RunnerClass {
         brand.color();
         brand.category();
 
-        System.out.println("Using Child as reference");
-        Shoe shoe=new Shoe();
-        shoe.infos();
+
 
         System.out.println("==========================  Country and state class================================");
         Country country=new Country();
@@ -41,16 +36,13 @@ public class RunnerClass {
         country.pm();
         country.parliment();
 
-        System.out.println("Using Child as reference");
-        State state=new State();
-        state.info();
 
         Country country1=new State();
         System.out.println("Using Parent as type");
-        country.tax();
-        country.democracy();
-        country.pm();
-        country.parliment();
+        country1.tax();
+        country1.democracy();
+        country1.pm();
+        country1.parliment();
 
 
         System.out.println("==========================  Plastic and Sofa  class================================");
@@ -61,9 +53,7 @@ public class RunnerClass {
         plastic.weight();
         plastic.color();
 
-        System.out.println("Using Child as reference");
-        Sofa sofa=new Sofa();
-        sofa.info();
+
 
         Plastic plastic1=new Sofa();
         System.out.println("Using Parent as type");
@@ -81,9 +71,6 @@ public class RunnerClass {
         parent.hobbies();
         parent.lastName();
 
-        System.out.println("Using Child as reference");
-        Child child=new Child();
-        child.info();
 
         Parent parent1=new Child();
         System.out.println("Using Parent as type");
@@ -100,9 +87,7 @@ public class RunnerClass {
         sports.manOfMatch();
         sports.budget();
 
-        System.out.println("Using Child as reference");
-        Football football=new Football();
-        football.info();
+
 
         Sports sports1=new Football();
         System.out.println("Using Parent as type");
@@ -120,9 +105,7 @@ public class RunnerClass {
         fluid.vapourPressure();
         fluid.stedy();
 
-        System.out.println("Using Child as reference");
-        Lpg lpg=new Lpg();
-        lpg.info();
+
 
         Fluid fluid1=new Lpg();
         System.out.println("Using Parent as type");
@@ -139,9 +122,7 @@ public class RunnerClass {
         machine.on();
         machine.work();
 
-        System.out.println("Using Child as reference");
-        Robot robot=new Robot();
-        robot.info();
+
 
         Machine machine1=new Robot();
         System.out.println("Using Parent as type");
@@ -158,16 +139,13 @@ public class RunnerClass {
        wood.quality();
        wood.type();
 
-        System.out.println("Using Child as reference");
-        Chair chair=new Chair();
-        chair.info();
 
         Wood wood1=new Chair();
         System.out.println("Using Parent as type");
-        wood.durability();
-        wood.size();
-        wood.quality();
-        wood.type();
+        wood1.size();
+        wood1.quality();
+        wood1.durability();
+        wood1.type();
 
         System.out.println("========================== Wood  and  Table class================================");
 
@@ -177,9 +155,6 @@ public class RunnerClass {
         wood.quality();
         wood.type();
 
-        System.out.println("Using Child as reference");
-        Table table=new Table();
-        chair.info();
 
         Wood wood2=new Table();
         System.out.println("Using Parent as type");
@@ -196,9 +171,7 @@ public class RunnerClass {
         wood.quality();
         wood.type();
 
-        System.out.println("Using Child as reference");
-        Pot pot=new Pot();
-        pot.info();
+
 
         Wood wood3=new Pot();
         System.out.println("Using Parent as type");
@@ -216,9 +189,7 @@ public class RunnerClass {
         wood.quality();
         wood.type();
 
-        System.out.println("Using Child as reference");
-        Furniture13 furniture13=new Furniture13();
-        furniture13.info();
+
 
         Wood wood5=new Pot();
         System.out.println("Using Parent as type");
@@ -236,9 +207,7 @@ public class RunnerClass {
         organization.pepole();
         organization. established();
 
-        System.out.println("Using Child as reference");
-        IT it=new IT();
-        it.info();
+
 
         Organization organization1= new Organization();
         System.out.println("Using Parent as type");
@@ -257,9 +226,6 @@ public class RunnerClass {
         organization.pepole();
         organization. established();
 
-        System.out.println("Using Child as reference");
-        Goverment goverment=new Goverment();
-        goverment.info();
 
         Organization organization2= new Goverment();
         System.out.println("Using Parent as type");
@@ -277,9 +243,7 @@ public class RunnerClass {
         organization.pepole();
         organization. established();
 
-        System.out.println("Using Child as reference");
-        Corparation corparation=new Corparation();
-        corparation.info();
+
 
         Organization organization3= new Goverment();
         System.out.println("Using Parent as type");
@@ -300,9 +264,6 @@ public class RunnerClass {
         fruit.price();
 
 
-        System.out.println("Using Child as reference");
-        Apple apple=new Apple();
-        apple.info();
 
         Fruit fruit1= new Apple();
         System.out.println("Using Parent as type");
@@ -324,9 +285,7 @@ public class RunnerClass {
         fruit.price();
 
 
-        System.out.println("Using Child as reference");
-        Musumbi musumbi=new Musumbi();
-        musumbi.info();
+
 
         Fruit fruit2= new Musumbi();
         System.out.println("Using Parent as type");
@@ -347,10 +306,6 @@ public class RunnerClass {
         fruit.price();
 
 
-        System.out.println("Using Child as reference");
-        Banana banana=new Banana();
-        banana.info();
-
         Fruit fruit3= new Banana();
         System.out.println("Using Parent as type");
         fruit3.size();
@@ -370,9 +325,7 @@ public class RunnerClass {
         fruit.price();
 
 
-        System.out.println("Using Child as reference");
-        JackFruit jackFruit=new JackFruit();
-        jackFruit.info();
+
 
         Fruit fruit4= new JackFruit();
         System.out.println("Using Parent as type");
@@ -393,10 +346,6 @@ public class RunnerClass {
         fruit.price();
 
 
-        System.out.println("Using Child as reference");
-        Tomato tomato=new Tomato();
-        tomato.info();
-
         Fruit fruit5= new Tomato();
         System.out.println("Using Parent as type");
         fruit5.size();
@@ -416,9 +365,7 @@ public class RunnerClass {
         flower.name();
 
 
-        System.out.println("Using Child as reference");
-        Rose rose=new Rose();
-        rose.info();
+
 
         Flower flower1= new Rose();
         System.out.println("Using Parent as type");
@@ -439,9 +386,7 @@ public class RunnerClass {
         flower.name();
 
 
-        System.out.println("Using Child as reference");
-        Lily24 lily24=new Lily24();
-        lily24.info();
+
 
         Flower flower2= new Rose();
         System.out.println("Using Parent as type");
@@ -462,9 +407,7 @@ public class RunnerClass {
         flower.name();
 
 
-        System.out.println("Using Child as reference");
-        Lotus25 lotus25=new Lotus25();
-        lotus25.info();
+
 
         Flower flower3= new Lotus25();
         System.out.println("Using Parent as type");
@@ -485,9 +428,6 @@ public class RunnerClass {
         flower.name();
 
 
-        System.out.println("Using Child as reference");
-        SunFlower26 sunFlower26=new SunFlower26();
-        sunFlower26.info();
 
         Flower flower4= new SunFlower26();
         System.out.println("Using Parent as type");
@@ -508,9 +448,7 @@ public class RunnerClass {
         flower.name();
 
 
-        System.out.println("Using Child as reference");
-        MarryGold27 marryGold27=new MarryGold27();
-        marryGold27.info();
+
 
         Flower flower5= new MarryGold27();
         System.out.println("Using Parent as type");
@@ -531,9 +469,7 @@ public class RunnerClass {
         flower.name();
 
 
-        System.out.println("Using Child as reference");
-        Hibiscus hibiscus=new Hibiscus();
-        marryGold27.info();
+
 
         Flower flower6= new Hibiscus();
         System.out.println("Using Parent as type");
@@ -555,9 +491,6 @@ public class RunnerClass {
         flower.name();
 
 
-        System.out.println("Using Child as reference");
-        Tulasi29 tulasi29=new Tulasi29();
-        marryGold27.info();
 
         Flower flower7= new Tulasi29();
         System.out.println("Using Parent as type");
@@ -578,9 +511,7 @@ public class RunnerClass {
         flower.name();
 
 
-        System.out.println("Using Child as reference");
-        Jasmin30 jasmin30=new Jasmin30();
-        jasmin30.info();
+
 
         Flower flower8= new Jasmin30();
         System.out.println("Using Parent as type");
@@ -601,9 +532,7 @@ public class RunnerClass {
         animal.run();
 
 
-        System.out.println("Using Child as reference");
-        Dog dog=new Dog();
-        dog.info();
+
 
         Animal animal1= new Dog();
         System.out.println("Using Parent as type");
@@ -624,10 +553,6 @@ public class RunnerClass {
         bird.fly();
 
 
-        System.out.println("Using Child as reference");
-        Crow crow=new Crow();
-        crow.info();
-
         Bird bird1= new Crow();
         System.out.println("Using Parent as type");
         bird1.eat();
@@ -647,9 +572,7 @@ public class RunnerClass {
         fish.price();
 
 
-        System.out.println("Using Child as reference");
-        Salmon salmon=new Salmon();
-        salmon.info();
+
 
         Fish fish1= new Salmon();
         System.out.println("Using Parent as type");
@@ -671,9 +594,6 @@ public class RunnerClass {
         reptile.eat();
 
 
-        System.out.println("Using Child as reference");
-        Lizard lizard=new Lizard();
-        lizard.info();
 
         Reptile reptile1= new Lizard();
         System.out.println("Using Parent as type");
@@ -695,10 +615,6 @@ public class RunnerClass {
         mammal.run();
 
 
-        System.out.println("Using Child as reference");
-        Elephant elephant=new Elephant();
-        elephant.info();
-
         Mammal mammal1= new Elephant();
         System.out.println("Using Parent as type");
         mammal1.color();
@@ -718,9 +634,6 @@ public class RunnerClass {
         amphibian.run();
 
 
-        System.out.println("Using Child as reference");
-        Frog frog=new Frog();
-        elephant.info();
 
         Amphibian amphibian1= new Frog();
         System.out.println("Using Parent as type");
@@ -741,16 +654,14 @@ public class RunnerClass {
         insect.fly();
 
 
-        System.out.println("Using Child as reference");
-        Butterfly butterfly=new Butterfly();
-        butterfly.info();
+
 
         Insect insect1= new Butterfly();
         System.out.println("Using Parent as type");
-        amphibian1.color();
-        amphibian1.size();
-        amphibian1.eat();
-        amphibian1.run();
+        insect1.color();
+        insect1.size();
+        insect1.eat();
+        insect1.fly();
 
         System.out.println("========================== Fish  and  Salmon (37) class================================");
 
@@ -763,10 +674,6 @@ public class RunnerClass {
         arachnid.eat();
         arachnid.run();
 
-
-        System.out.println("Using Child as reference");
-        Spider spider=new Spider();
-        spider.info();
 
         Arachnid arachnid1= new Spider();
         System.out.println("Using Parent as type");
@@ -787,9 +694,7 @@ public class RunnerClass {
         rodent.run();
 
 
-        System.out.println("Using Child as reference");
-        Mouse mouse=new Mouse();
-        mouse.info();
+
 
         Rodent rodent1= new Mouse();
         System.out.println("Using Parent as type");
@@ -811,9 +716,7 @@ public class RunnerClass {
         marineMammal.swim();
 
 
-        System.out.println("Using Child as reference");
-        Dolphin dolphin=new Dolphin();
-        dolphin.info();
+
 
         MarineMammal marineMammal1= new Dolphin();
         System.out.println("Using Parent as type");
@@ -834,9 +737,7 @@ public class RunnerClass {
         vehicle.name();
 
 
-        System.out.println("Using Child as reference");
-        Bike bike=new Bike();
-        bike.info();
+
 
         Vehicle vehicle2= new Bike();
         System.out.println("Using Parent as type");
@@ -857,9 +758,6 @@ public class RunnerClass {
         wood.durability();
 
 
-        System.out.println("Using Child as reference");
-        Stick stick=new Stick();
-        stick.info();
 
         Wood wood4= new Stick();
         System.out.println("Using Parent as type");
@@ -880,9 +778,7 @@ public class RunnerClass {
         boat.durability();
 
 
-        System.out.println("Using Child as reference");
-        Yacht yacht=new Yacht();
-        yacht.info();
+
 
         Boat boat1= new Yacht();
         System.out.println("Using Parent as type");
@@ -903,9 +799,7 @@ public class RunnerClass {
         aircraft.durability();
 
 
-        System.out.println("Using Child as reference");
-        Jet jet=new Jet();
-        jet.info();
+
 
         Aircraft aircraft1= new Jet();
         System.out.println("Using Parent as type");
@@ -926,9 +820,6 @@ public class RunnerClass {
         bicycle.durability();
 
 
-        System.out.println("Using Child as reference");
-        MountainBike mountainBike =new MountainBike();
-        yacht.info();
 
         Bicycle bicycle1= new MountainBike();
         System.out.println("Using Parent as type");
@@ -950,9 +841,7 @@ public class RunnerClass {
         train45.durability();
 
 
-        System.out.println("Using Child as reference");
-        FreightTrain45 freightTrain45 =new FreightTrain45();
-        freightTrain45.info();
+
 
         Train45 train451= new FreightTrain45();
         System.out.println("Using Parent as type");
@@ -997,9 +886,6 @@ public class RunnerClass {
         bus47.durability();
 
 
-        System.out.println("Using Child as reference");
-        SchoolBus47 schoolBus47 =new SchoolBus47();
-        schoolBus47.info();
 
         Bus47 bus471= new SchoolBus47();
         System.out.println("Using Parent as type");
@@ -1021,9 +907,7 @@ public class RunnerClass {
         truck.durability();
 
 
-        System.out.println("Using Child as reference");
-        PickupTruck pickupTruck =new PickupTruck();
-        pickupTruck.info();
+
 
         Truck truck1= new PickupTruck();
         System.out.println("Using Parent as type");
@@ -1045,9 +929,7 @@ public class RunnerClass {
         submarine.durability();
 
 
-        System.out.println("Using Child as reference");
-        MilitarySubmarine militarySubmarine =new MilitarySubmarine();
-        militarySubmarine.info();
+
 
         Submarine submarine1= new MilitarySubmarine();
         System.out.println("Using Parent as type");
@@ -1068,9 +950,7 @@ public class RunnerClass {
         helicopter.durability();
 
 
-        System.out.println("Using Child as reference");
-        RescueHelicopter rescueHelicopter =new RescueHelicopter();
-        rescueHelicopter.info();
+
 
         Helicopter helicopter1= new RescueHelicopter();
         System.out.println("Using Parent as type");
@@ -1093,9 +973,7 @@ public class RunnerClass {
         electronicDevice.quality();
 
 
-        System.out.println("Using Child as reference");
-        SmartPhone smartPhone =new SmartPhone();
-        smartPhone.info();
+
 
         ElectronicDevice electronicDevice1= new SmartPhone();
         System.out.println("Using Parent as type");
@@ -1117,9 +995,7 @@ public class RunnerClass {
         computer.quality();
 
 
-        System.out.println("Using Child as reference");
-        Laptop laptop =new Laptop();
-        laptop.info();
+
 
         Computer computer1= new Laptop();
         System.out.println("Using Parent as type");
@@ -1140,9 +1016,7 @@ public class RunnerClass {
         camera.quality();
 
 
-        System.out.println("Using Child as reference");
-        Dslr dslr =new Dslr();
-        dslr.info();
+
 
         Camera camera1= new Dslr();
         System.out.println("Using Parent as type");
@@ -1164,10 +1038,6 @@ public class RunnerClass {
         audioDevice.quality();
 
 
-        System.out.println("Using Child as reference");
-        Speaker speaker =new Speaker();
-        dslr.info();
-
         AudioDevice audioDevice1= new Speaker();
         System.out.println("Using Parent as type");
         audioDevice1.name();
@@ -1187,9 +1057,7 @@ public class RunnerClass {
         homeAppliance.quality();
 
 
-        System.out.println("Using Child as reference");
-        Refrigerator refrigerator =new Refrigerator();
-        dslr.info();
+
 
         HomeAppliance homeAppliance1= new Refrigerator();
         System.out.println("Using Parent as type");
@@ -1211,9 +1079,7 @@ public class RunnerClass {
         television.quality();
 
 
-        System.out.println("Using Child as reference");
-        Refrigerator refrigerator1 =new Refrigerator();
-        dslr.info();
+
 
         Television television1= new SmartTv();
         System.out.println("Using Parent as type");
@@ -1234,9 +1100,7 @@ public class RunnerClass {
         gamingConsole.quality();
 
 
-        System.out.println("Using Child as reference");
-        Playstation  playstation=new Playstation();
-        playstation.info();
+
 
         GamingConsole gamingConsole1= new Playstation();
         System.out.println("Using Parent as type");
@@ -1283,9 +1147,7 @@ public class RunnerClass {
         kitchenAppliance.quality();
 
 
-        System.out.println("Using Child as reference");
-        Microwave  microwave=new Microwave();
-        microwave.info();
+
 
         KitchenAppliance kitchenAppliance1= new Microwave();
         System.out.println("Using Parent as type");
@@ -1305,9 +1167,7 @@ public class RunnerClass {
         printer.quality();
 
 
-        System.out.println("Using Child as reference");
-        LaserPrinter  laserPrinter=new LaserPrinter();
-        laserPrinter.info();
+
 
         Printer printer1= new LaserPrinter();
         System.out.println("Using Parent as type");
@@ -1327,9 +1187,7 @@ public class RunnerClass {
         person.dancing();
 
 
-        System.out.println("Using Child as reference");
-        Teacher  teacher=new Teacher();
-        teacher.info();
+
 
         Person person1= new Teacher();
         System.out.println("Using Parent as type");
@@ -1350,9 +1208,7 @@ public class RunnerClass {
         doctor.position();
 
 
-        System.out.println("Using Child as reference");
-        Surgeon  surgeon=new Surgeon();
-        surgeon.info();
+
 
         Doctor doctor1= new Surgeon();
         System.out.println("Using Parent as type");
@@ -1372,9 +1228,6 @@ public class RunnerClass {
         artist.signature();
 
 
-        System.out.println("Using Child as reference");
-        Painter  painter=new Painter();
-        painter.info();
 
         Artist artist1= new Painter();
         System.out.println("Using Parent as type");
@@ -1393,10 +1246,6 @@ public class RunnerClass {
         engineer.title();
         engineer.salary();
 
-
-        System.out.println("Using Child as reference");
-        CivilEngineer civilEngineer=new CivilEngineer();
-        painter.info();
 
         Engineer engineer1 = new CivilEngineer();
         System.out.println("Using Parent as type");
@@ -1418,9 +1267,7 @@ public class RunnerClass {
         athlete.salary();
 
 
-        System.out.println("Using Child as reference");
-        SoccerPlayer soccerPlayer=new SoccerPlayer();
-        soccerPlayer.info();
+
 
         Athlete athlete1 = new SoccerPlayer();
         System.out.println("Using Parent as type");

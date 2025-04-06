@@ -1,10 +1,21 @@
 package com.xworkz.inheritence.inner;
 
 public class Bench12 extends Wood{
-    public void info() {
-        quality();
-        size();
-        type();
-        durability();
+
+    @Override
+    public void quality() {
+        System.out.println("Its of Good Quality");
+    }
+    @Override
+    public void size() {
+        System.out.println("Its of Big size");
+    }
+    @Override
+    public void type() {
+        System.out.println("Its of Good type");
+    }
+    @Override
+    public void durability() {
+        System.out.println("Its of Good Durability");
     }
 }

@@ -1,11 +1,21 @@
 package com.xworkz.inheritence.inner;
 
 public class Painter extends Artist {
-    public void info() {
-        draw();
-        name();
-        method();
-        signature();
+    @Override
+    public void draw() {
+        System.out.println("Drawing");
+    }
+    @Override
+    public void name() {
+        System.out.println("The name of the Ravi");
+    }
+    @Override
+    public void method() {
+        System.out.println("pens are used");
+    }
+    @Override
+    public void signature() {
+        System.out.println("doing signature");
     }
 
 }
