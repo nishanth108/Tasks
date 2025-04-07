@@ -18,4 +18,7 @@ public class Frog extends Amphibian{
     public void eat() {
         System.out.println("Frog eats other insects ");
     }
+    public void sound() {
+        System.out.println("uink uink");
+    }
 }

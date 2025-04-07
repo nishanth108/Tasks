@@ -17,4 +17,10 @@ public class Jet extends Aircraft {
     public void durability() {
         System.out.println("Jet has  of Good Durability");
     }
+
+    public void owner(){
+        System.out.println("Nishanth is the owner");
+
+    }
+
 }

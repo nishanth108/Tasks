@@ -22,4 +22,8 @@ public class Apple extends Fruit{
             System.out.println("it cost 150rs per kg");
         }
 
+        public void makeJuice() {
+            System.out.println("Making Juice out of apple");
+        }
+
 }
