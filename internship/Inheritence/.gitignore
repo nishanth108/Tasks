@@ -29,8 +29,10 @@ bin/
 .DS_Store
 
 
-.idea
-./.idea
-Inheritence.iml
+.idea/
+./.idea/
+Inheritence.iml/
+
 
 requirements
+
