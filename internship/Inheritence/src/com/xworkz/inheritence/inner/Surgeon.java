@@ -20,4 +20,7 @@ public class Surgeon extends Doctor{
     public void position() {
         System.out.println("The Position is a Surgeon");
     }
+    public void quality() {
+        System.out.println("Good quality of time for Surgery is high ");
+    }
 }

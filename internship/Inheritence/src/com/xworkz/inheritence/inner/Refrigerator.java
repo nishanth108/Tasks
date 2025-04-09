@@ -19,4 +19,8 @@ public class Refrigerator extends HomeAppliance{
     public void quality() {
         System.out.println("Good quality of Devices");
     }
+
+    public void qualitys() {
+        System.out.println("Good quality of Devices");
+    }
 }

@@ -18,4 +18,9 @@ public class Speaker extends AudioDevice {
     public void quality() {
         System.out.println("Good quality of Devices");
     }
+
+    public void brandName() {
+        System.out.println("the Brand is JBL");
+
+    }
 }

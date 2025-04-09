@@ -12,6 +12,7 @@ public class Yacht extends Boat{
         System.out.println("Yacht of Big size");
     }
 
+
     @Override
     public void space() {
         System.out.println("Yatch comes with a big space");
@@ -20,6 +21,9 @@ public class Yacht extends Boat{
     @Override
     public void durability() {
         System.out.println("Yacht of Good Durability");
+    }
+    public void price() {
+        System.out.println("Yacht of Big size");
     }
 
 }

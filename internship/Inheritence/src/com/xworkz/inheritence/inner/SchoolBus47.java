@@ -22,4 +22,8 @@ public class SchoolBus47  extends Bus47{
     public void durability() {
         System.out.println("schoolBus of Good Durability");
     }
+    public void color() {
+        System.out.println("Bus color is white");
+    }
+
 }

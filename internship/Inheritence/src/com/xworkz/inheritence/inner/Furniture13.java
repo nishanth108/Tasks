@@ -21,4 +21,7 @@ public class Furniture13 extends Wood{
     public void durability() {
         System.out.println("Its of Good Durability");
     }
+    public void qualitys() {
+        System.out.println("Good quality of corporation is good");
+    }
 }

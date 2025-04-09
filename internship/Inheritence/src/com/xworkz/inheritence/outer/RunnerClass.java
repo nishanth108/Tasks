@@ -1,7 +1,7 @@
 package com.xworkz.inheritence.outer;
 
 import com.xworkz.inheritence.inner.*;
-
+import com.xworkz.inheritence.typeCasting.*;
 
 
 public class RunnerClass {
@@ -19,12 +19,24 @@ public class RunnerClass {
         vehicle1.color();
 
 //    Brand and Shoe class , Shoe Inherit Brnad(Shoe is a Brand)
+
+
+
+
+
+
         Brand brand=new Brand();
         System.out.println("Using Parent ref");
         brand.brandLogo();
         brand.brandName();
         brand.color();
         brand.category();
+
+//        =========================== For ShoeRunner ====================
+        ShoeRunner shoeRunner = new ShoeRunner();
+        shoeRunner.info(brand);
+
+
 
 
 
@@ -36,6 +48,9 @@ public class RunnerClass {
         country.pm();
         country.parliment();
 
+
+        StateRunner stateRunner = new StateRunner();
+        stateRunner.info(country);
 
         Country country1=new State();
         System.out.println("Using Parent as type");
@@ -72,6 +87,10 @@ public class RunnerClass {
         parent.lastName();
 
 
+        ChildRunner childRunner = new ChildRunner();
+        childRunner.info(parent);
+
+
         Parent parent1=new Child();
         System.out.println("Using Parent as type");
         parent1.bloodGroup();
@@ -95,6 +114,10 @@ public class RunnerClass {
         sports1.lose();
         sports1.manOfMatch();
         sports1.budget();
+
+        footballRunner footballRunner = new footballRunner();
+        footballRunner.info(sports);
+
 
 
         System.out.println("========================== Fluid  and  Lpg  class================================");
@@ -139,6 +162,9 @@ public class RunnerClass {
        wood.quality();
        wood.type();
 
+
+        FurnitureRunner furnitureRunner = new FurnitureRunner();
+        furnitureRunner.info(wood);
 
         Wood wood1=new Chair();
         System.out.println("Using Parent as type");
@@ -234,6 +260,9 @@ public class RunnerClass {
         organization2.pepole();
         organization2. established();
 
+//        GovermentRunner govermentRunner = new GovermentRunner();
+
+
         System.out.println("========================== Organizatoion  and  Coorperation (17) class================================");
 
         System.out.println("Using Parent ref");
@@ -243,6 +272,8 @@ public class RunnerClass {
         organization.pepole();
         organization. established();
 
+        CoorparationRunner coorparationRunner = new CoorparationRunner();
+        coorparationRunner.info(organization);
 
 
         Organization organization3= new Goverment();
@@ -262,6 +293,9 @@ public class RunnerClass {
         fruit.taste();
         fruit.color();
         fruit.price();
+
+        AppleRunner appleRunner =new AppleRunner();
+        appleRunner.info(fruit);
 
 
 
@@ -478,6 +512,9 @@ public class RunnerClass {
         flower6.quality();
         flower6.name();
 
+        HibisusRunner hibisusRunner = new HibisusRunner();
+        hibisusRunner.info(flower);
+
 
         System.out.println("========================== Flower  and  Tulasi (29) class================================");
 
@@ -531,6 +568,8 @@ public class RunnerClass {
         animal.jump();
         animal.run();
 
+        DogRunner3 dogRunner3 = new DogRunner3();
+        dogRunner3.info(animal);
 
 
 
@@ -552,6 +591,8 @@ public class RunnerClass {
         bird.jump();
         bird.fly();
 
+        CrowRunner crowRunner = new CrowRunner();
+        crowRunner.info(bird);
 
         Bird bird1= new Crow();
         System.out.println("Using Parent as type");
@@ -633,7 +674,8 @@ public class RunnerClass {
         amphibian.eat();
         amphibian.run();
 
-
+        FrogRunner2 frogRunner2 = new FrogRunner2();
+        frogRunner2.info(amphibian);
 
         Amphibian amphibian1= new Frog();
         System.out.println("Using Parent as type");
@@ -641,6 +683,8 @@ public class RunnerClass {
         amphibian1.size();
         amphibian1.eat();
         amphibian1.run();
+
+
 
         System.out.println("========================== Fish  and  Salmon (36) class================================");
 
@@ -653,7 +697,8 @@ public class RunnerClass {
         insect.eat();
         insect.fly();
 
-
+        ButterflyRunner butterflyRunner = new ButterflyRunner();
+        butterflyRunner.info(insect);
 
 
         Insect insect1= new Butterfly();
@@ -668,6 +713,8 @@ public class RunnerClass {
         System.out.println("Using Parent ref");
         Arachnid arachnid= new Arachnid();
 
+        SpiderRunner5 spiderRunner5 = new SpiderRunner5();
+        spiderRunner5.info(arachnid);
 
         arachnid.color();
         arachnid.size();
@@ -725,6 +772,9 @@ public class RunnerClass {
         marineMammal1.eat();
         marineMammal1.swim();
 
+        DolphinRunner dolphinRunner = new DolphinRunner();
+        dolphinRunner.info(marineMammal1);
+
         System.out.println("========================== Vechicle  and  Bike (40) class================================");
 
         System.out.println("Using Parent ref");
@@ -745,6 +795,9 @@ public class RunnerClass {
         vehicle2.speed();
         vehicle2.model();
         vehicle2.name();
+
+        BikeRunner bikeRunner = new BikeRunner();
+        bikeRunner.info(vehicle2);
 
         System.out.println("========================== Wood  and  Stick (41) class================================");
 
@@ -777,6 +830,9 @@ public class RunnerClass {
         boat.space();
         boat.durability();
 
+        YatchRunner yatchRunner = new YatchRunner();
+        yatchRunner.info(boat);
+
 
 
 
@@ -797,6 +853,9 @@ public class RunnerClass {
         aircraft.speed();
         aircraft.size();
         aircraft.durability();
+
+        JetRunner jet=new JetRunner();
+        jet.info(aircraft);
 
 
 
@@ -840,6 +899,9 @@ public class RunnerClass {
         train45.space();
         train45.durability();
 
+
+        FrightTrainRunner frightTrainRunner = new FrightTrainRunner();
+        frightTrainRunner.info(train45);
 
 
 
@@ -885,7 +947,8 @@ public class RunnerClass {
         bus47.space();
         bus47.durability();
 
-
+        SchoolBusRunner schoolBusRunner = new SchoolBusRunner();
+        schoolBusRunner.info(bus47);
 
         Bus47 bus471= new SchoolBus47();
         System.out.println("Using Parent as type");
@@ -950,6 +1013,8 @@ public class RunnerClass {
         helicopter.durability();
 
 
+//        RunnereHelicopterRunner runnereHelicopterRunner = new RunnereHelicopterRunner();
+//        runnereHelicopterRunner.info();
 
 
         Helicopter helicopter1= new RescueHelicopter();
@@ -982,6 +1047,8 @@ public class RunnerClass {
         electronicDevice1.price();
         electronicDevice1.quality();
 
+        SmartPhoneRunner smartPhoneRunner= new SmartPhoneRunner();
+        smartPhoneRunner.info(electronicDevice);
 
         System.out.println("========================== Electronic Device  and SmartPhone ( 52) class================================");
 
@@ -1004,6 +1071,9 @@ public class RunnerClass {
         computer1.price();
         computer1.quality();
 
+        LaptopRunner laptopRunner = new LaptopRunner();
+        laptopRunner.info(computer1);
+
         System.out.println("========================== Camera Device  and Dslr ( 53) class================================");
 
         System.out.println("Using Parent ref");
@@ -1016,7 +1086,8 @@ public class RunnerClass {
         camera.quality();
 
 
-
+        DslrRunner dslrRunner = new DslrRunner();
+        dslrRunner.info(camera);
 
         Camera camera1= new Dslr();
         System.out.println("Using Parent as type");
@@ -1037,6 +1108,8 @@ public class RunnerClass {
         audioDevice.price();
         audioDevice.quality();
 
+        SpeakerRunner8 speakerRunner8 = new SpeakerRunner8();
+        speakerRunner8.info(audioDevice);
 
         AudioDevice audioDevice1= new Speaker();
         System.out.println("Using Parent as type");
@@ -1065,7 +1138,9 @@ public class RunnerClass {
         homeAppliance1.warranty();
         homeAppliance1.price();
         homeAppliance1.quality();
-
+//
+//        RefrigeratorRunner refrigeratorRunner = new RefrigeratorRunner();
+//        refrigeratorRunner.info();
 
         System.out.println("========================== Television   and SmartTV ( 56) class================================");
 
@@ -1208,6 +1283,9 @@ public class RunnerClass {
         doctor.position();
 
 
+        SurgeonRunner surgeonRunner = new SurgeonRunner();
+        surgeonRunner.info(doctor);
+
 
 
         Doctor doctor1= new Surgeon();
@@ -1227,6 +1305,8 @@ public class RunnerClass {
         artist.method();
         artist.signature();
 
+        PainterRunner painter1 = new PainterRunner();
+        painter1.info(artist);
 
 
         Artist artist1= new Painter();
@@ -1246,6 +1326,8 @@ public class RunnerClass {
         engineer.title();
         engineer.salary();
 
+        CivilEngineerRunner civilEngineer = new CivilEngineerRunner();
+        civilEngineer.info(engineer);
 
         Engineer engineer1 = new CivilEngineer();
         System.out.println("Using Parent as type");
@@ -1265,6 +1347,11 @@ public class RunnerClass {
         athlete.physique();
         athlete.position();
         athlete.salary();
+
+        SocerRunner7 socerRunner7 = new SocerRunner7();
+        socerRunner7.info(athlete);
+
+
 
 
 

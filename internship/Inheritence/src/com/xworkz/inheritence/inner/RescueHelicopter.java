@@ -1,6 +1,9 @@
 package com.xworkz.inheritence.inner;
 
 public class RescueHelicopter extends Helicopter {
+    public void quality() {
+        System.out.println("Good quality of corporation is good");
+    }
     @Override
     public void speed() {
         System.out.println("Its of 200km/h speed");

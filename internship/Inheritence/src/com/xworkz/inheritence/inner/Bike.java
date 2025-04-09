@@ -32,5 +32,9 @@ public class Bike extends Vehicle{
     public void model() {
         System.out.println("This is the 1990 model");
     }
+    public void milege() {
+        System.out.println("The mileege is the 34");
+    }
+
 
 }

@@ -1,6 +1,9 @@
 package com.xworkz.inheritence.inner;
 
 public class MarryGold27 extends Flower {
+    public void qualitys() {
+        System.out.println("Good quality of Devices");
+    }
     @Override
     public void name() {
         System.out.println("Give the name of the flower");

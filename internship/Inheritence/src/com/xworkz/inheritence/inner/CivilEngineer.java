@@ -20,4 +20,8 @@ public class CivilEngineer extends Engineer{
     public void salary() {
         System.out.println("The Salary is 1 lakhs");
     }
+
+    public void college() {
+        System.out.println("Nitte");
+    }
 }

@@ -17,5 +17,7 @@ public class Dolphin extends MarineMammal{
     public void eat() {
         System.out.println("it eats fishes and fruits ");
     }
-
+    public void quality() {
+        System.out.println("Good quality of living ");
+    }
 }

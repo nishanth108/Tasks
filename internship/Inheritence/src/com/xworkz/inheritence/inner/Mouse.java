@@ -1,6 +1,10 @@
 package com.xworkz.inheritence.inner;
 
 public class Mouse extends Rodent{
+
+    public void qualitys() {
+        System.out.println("Good quality of Devices");
+    }
     @Override
     public void color() {
         System.out.println("the color of the Rodent is depends ");

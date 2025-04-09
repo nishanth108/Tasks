@@ -17,5 +17,8 @@ public class Painter extends Artist {
     public void signature() {
         System.out.println("doing signature");
     }
+    public void salary() {
+        System.out.println("The salary is 900");
+    }
 
 }

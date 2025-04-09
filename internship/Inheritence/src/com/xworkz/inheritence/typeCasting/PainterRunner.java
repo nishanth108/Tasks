@@ -1,0 +1,22 @@
+package com.xworkz.inheritence.typeCasting;
+
+import com.xworkz.inheritence.inner.Apple;
+import com.xworkz.inheritence.inner.Artist;
+import com.xworkz.inheritence.inner.Fruit;
+import com.xworkz.inheritence.inner.Painter;
+
+public class PainterRunner {
+    public void info(Artist artist) {
+        if (artist!=null) {
+            artist.method();
+            artist.draw();
+            artist.signature();
+            artist.name();
+
+            if (artist instanceof Painter) {
+                Painter painter = (Painter) artist;
+                painter.salary();
+            }
+        }
+    }
+}

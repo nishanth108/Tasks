@@ -17,6 +17,8 @@ public class Child extends Parent{
     public void lastName() {
         System.out.println("thiya");
     }
-
+    public void property() {
+        System.out.println("lands");
+    }
 
 }

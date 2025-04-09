@@ -18,4 +18,7 @@ public class Bench12 extends Wood{
     public void durability() {
         System.out.println("Its of Good Durability");
     }
+    public void rate() {
+        System.out.println("The bench cost up to 466 rs");
+    }
 }

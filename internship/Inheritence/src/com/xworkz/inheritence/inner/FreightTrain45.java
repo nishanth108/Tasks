@@ -17,5 +17,8 @@ public class FreightTrain45 extends Train45 {
    public void durability() {
         System.out.println("Its of Good Durability");
     }
+    public void quality() {
+        System.out.println("Good quality of corporation is good");
+    }
 
 }

@@ -13,4 +13,5 @@ public class Boat {
     public void durability() {
         System.out.println("Its of Good Durability");
     }
+
 }

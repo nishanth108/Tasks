@@ -1,6 +1,9 @@
 package com.xworkz.inheritence.inner;
 
 public class LaserPrinter extends Printer{
+    public void qualitys() {
+        System.out.println("Good quality of Devices");
+    }
     @Override
     public void name() {
         System.out.println("This is an Electronic Device");

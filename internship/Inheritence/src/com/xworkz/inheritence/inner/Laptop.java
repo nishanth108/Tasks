@@ -19,4 +19,9 @@ public class Laptop extends Computer{
         System.out.println("Good quality of Devices");
     }
 
+    public void move() {
+        System.out.println("Can be moved");
+    }
+
+
 }

@@ -17,5 +17,8 @@ public class Football extends Sports {
     public  void budget() {
         System.out.println("budget is 13Million");
     }
+    public  void quality() {
+        System.out.println("budget is 13Million");
+    }
 
 }

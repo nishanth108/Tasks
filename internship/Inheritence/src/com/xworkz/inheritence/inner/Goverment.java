@@ -1,6 +1,9 @@
 package com.xworkz.inheritence.inner;
 
 public class Goverment extends Organization{
+    public void quality() {
+        System.out.println("Good quality of corporation is good");
+    }
     @Override
     public void jobs() {
         System.out.println("There are lots of jobs");

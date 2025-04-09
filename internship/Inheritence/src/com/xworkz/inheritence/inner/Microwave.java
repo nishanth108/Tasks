@@ -18,5 +18,8 @@ public class Microwave extends KitchenAppliance{
     public void quality() {
         System.out.println("Good quality of Devices");
     }
+    public void qualitys() {
+        System.out.println("Good quality of Devices");
+    }
 
 }

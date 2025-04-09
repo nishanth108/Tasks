@@ -17,4 +17,8 @@ public class MountainBike extends Bicycle{
     public void durability() {
         System.out.println("MountainBike of Good Durability");
     }
+
+    public void brand() {
+        System.out.println("This of Hero Brand");
+    }
 }

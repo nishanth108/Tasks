@@ -22,4 +22,7 @@ public class Hibiscus extends Flower{
     public void color() {
         System.out.println("Depends on the flower");
     }
+    public void qualitys() {
+        System.out.println("Good quality of corporation is good");
+    }
 }

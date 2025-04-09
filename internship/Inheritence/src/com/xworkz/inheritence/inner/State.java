@@ -22,6 +22,9 @@ public class State extends Country{
    public void parliment() {
         System.out.println("inside the parliment");
     }
+    public void quality() {
+        System.out.println("Good quality of living ");
+    }
 
 
 }

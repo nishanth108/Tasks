@@ -19,4 +19,7 @@ public class Corparation extends Organization{
         System.out.println("Corparation is established in 1975");
     }
 
+    public void quality() {
+        System.out.println("Good quality of corporation is good");
+    }
 }

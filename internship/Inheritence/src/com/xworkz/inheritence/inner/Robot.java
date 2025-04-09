@@ -1,7 +1,9 @@
 package com.xworkz.inheritence.inner;
 
 public class Robot extends Machine{
-
+    public void qualitys() {
+        System.out.println("Good quality of Devices");
+    }
     @Override
     public void on() {
         System.out.println("Turn ON");

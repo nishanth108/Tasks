@@ -19,5 +19,9 @@ public  Shoe() {
     public void color() {
         System.out.println("Shoe color is white");
     }
+    public void name() {
+        System.out.println("Shoe name is nike");
+    }
+
 
 }

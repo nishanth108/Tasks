@@ -18,4 +18,7 @@ public class Dslr extends Camera {
     public void quality() {
         System.out.println("Good quality of Devices");
     }
+    public void pixel() {
+        System.out.println("Its of 62 mega pixel");
+    }
 }

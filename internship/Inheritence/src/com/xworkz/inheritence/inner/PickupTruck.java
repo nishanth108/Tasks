@@ -1,6 +1,9 @@
 package com.xworkz.inheritence.inner;
 
 public class PickupTruck extends Truck {
+    public void qualitys() {
+        System.out.println("Good quality of Devices");
+    }
     @Override
     public void speed() {
         System.out.println("Its of 200km/h speed");

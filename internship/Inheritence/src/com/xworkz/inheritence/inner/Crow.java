@@ -17,4 +17,10 @@ public class Crow extends Bird{
     public void eat() {
         System.out.println("Crow Eating  ");
     }
+
+    public void play() {
+        System.out.println("Crow is playing  ");
+    }
+
+
 }

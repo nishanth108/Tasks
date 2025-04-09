@@ -19,5 +19,9 @@ public class SmartPhone extends ElectronicDevice{
     public void quality() {
         System.out.println("Good quality of Mobiles");
     }
+    public void camera() {
+        System.out.println("Given the Camera");
+    }
+
 
 }

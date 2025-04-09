@@ -18,4 +18,8 @@ public class SoccerPlayer extends Athlete{
         System.out.println("He is an enterprenur with football as a passion");
     }
 
+    public void shoot() {
+        System.out.println("Its a good chance to Score ");
+    }
+
 }

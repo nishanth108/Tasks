@@ -22,5 +22,8 @@ public class Salmon extends Fish{
         System.out.println("it cost 150rs ");
     }
 
+    public void quality() {
+        System.out.println("Good quality of life");
+    }
 
 }

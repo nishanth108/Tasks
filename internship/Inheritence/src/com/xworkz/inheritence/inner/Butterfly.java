@@ -18,4 +18,8 @@ public class Butterfly extends Insect{
     public void eat() {
         System.out.println("Butterfly eats micro organism and fruits ");
     }
+    public void forming() {
+        System.out.println("Insect to  Butterfly form");
+    }
+
 }

@@ -1,6 +1,7 @@
 package com.xworkz.inheritence.inner;
 
 public class Spider extends Arachnid{
+    @Override
     public void color() {
         System.out.println("the color of the Spider is brown ");
     }
@@ -15,4 +16,9 @@ public class Spider extends Arachnid{
     public void eat() {
         System.out.println("it eats other insects ");
     }
+
+    public void skill() {
+        System.out.println("Spider Have Web");
+    }
+
 }
