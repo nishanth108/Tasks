@@ -15,5 +15,20 @@ public class FilterCoffie {
         return   "The Passed value number,  name , brand";
     }
 
-
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof FilterCoffie) {
+                System.out.println("ref is beer, will compare...");
+                FilterCoffie filterCoffe1 = this;
+                FilterCoffie filterCoffe2 = (FilterCoffie) obj;
+                if (filterCoffe1.number == filterCoffe2.number && filterCoffe1.brand.equals(filterCoffe2.brand) && filterCoffe1.name.equals(filterCoffe2.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

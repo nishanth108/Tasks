@@ -20,4 +20,21 @@ public class NailCutter26 {
         System.out.println("The original hashCode :"+super.hashCode());
         return 71;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof NailCutter26) {
+                System.out.println("ref is beer, will compare...");
+                NailCutter26 nailCutter = this;
+                NailCutter26 nailCutter1 = (NailCutter26) obj;
+                if (nailCutter.number == nailCutter1.number && nailCutter.brand.equals(nailCutter1.brand) ) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

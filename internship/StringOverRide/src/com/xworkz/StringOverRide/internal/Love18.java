@@ -20,4 +20,21 @@ public class Love18 {
         System.out.println("The original hashCode :"+super.hashCode());
         return 67;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Love18) {
+                System.out.println("ref is beer, will compare...");
+                Love18 love1 = this;
+                Love18 love2 = (Love18) obj;
+                if (love1.number == love2.number && love1.brand.equals(love2.brand) ) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

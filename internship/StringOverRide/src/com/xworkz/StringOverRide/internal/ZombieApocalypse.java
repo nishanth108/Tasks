@@ -36,4 +36,21 @@ public class ZombieApocalypse {
         System.out.println("The original hashCode :"+super.hashCode());
         return 106;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof ZombieApocalypse) {
+                System.out.println("ref is beer, will compare...");
+                ZombieApocalypse keyChain1 = this;
+                ZombieApocalypse keyChain2 = (ZombieApocalypse) obj;
+                if (keyChain1.number == keyChain2.number && keyChain1.brand.equals(keyChain2.brand) && keyChain1.name.equals(keyChain2.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

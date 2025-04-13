@@ -36,4 +36,21 @@ public class ZestyRecipe {
         System.out.println("The original hashCode :"+super.hashCode());
         return 97;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof ZestyRecipe) {
+                System.out.println("ref is beer, will compare...");
+                ZestyRecipe keyChain1 = this;
+                ZestyRecipe keyChain2 = (ZestyRecipe) obj;
+                if (keyChain1.number == keyChain2.number && keyChain1.brand.equals(keyChain2.brand) && keyChain1.name.equals(keyChain2.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

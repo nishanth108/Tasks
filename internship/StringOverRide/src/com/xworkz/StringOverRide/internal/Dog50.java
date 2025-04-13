@@ -20,4 +20,21 @@ public class Dog50 {
         System.out.println("The original hashCode :"+super.hashCode());
         return 50;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Dog50) {
+                System.out.println("ref is beer, will compare...");
+                Dog50 dog1 = this;
+                Dog50 dog2 = (Dog50) obj;
+                if (dog1.number == dog2.number && dog1.brand.equals(dog2.brand) && dog1.name.equals(dog2.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

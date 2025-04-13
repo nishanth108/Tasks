@@ -20,4 +20,21 @@ public class Speck36 {
         System.out.println("The original hashCode :"+super.hashCode());
         return 79;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Speck36) {
+                System.out.println("ref is beer, will compare...");
+                Speck36 keyChain1 = this;
+                Speck36 keyChain2 = (Speck36) obj;
+                if (keyChain1.number == keyChain2.number && keyChain1.brand.equals(keyChain2.brand)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

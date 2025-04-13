@@ -20,4 +20,21 @@ public class Glass {
         System.out.println("The original hashCode :"+super.hashCode());
         return 56;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Glass) {
+                System.out.println("ref is beer, will compare...");
+                Glass glass = this;
+                Glass glass1 = (Glass) obj;
+                if (glass.number == glass1.number && glass.brand.equals(glass1.brand) && glass.name.equals(glass1.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

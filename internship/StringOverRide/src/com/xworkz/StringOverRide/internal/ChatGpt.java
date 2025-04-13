@@ -20,4 +20,21 @@ public class ChatGpt {
         System.out.println("The original hashCode :"+super.hashCode());
         return 36;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof ChatGpt) {
+                System.out.println("ref is beer, will compare...");
+                ChatGpt aries1 = this;
+                ChatGpt aries2 = (ChatGpt) obj;
+                if (aries1.number == aries2.number && aries1.brand.equals(aries2.brand) && aries1.name.equals(aries2.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

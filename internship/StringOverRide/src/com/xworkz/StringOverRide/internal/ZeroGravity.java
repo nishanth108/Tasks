@@ -36,4 +36,21 @@ public class ZeroGravity {
         System.out.println("The original hashCode :"+super.hashCode());
         return 96;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof ZeroGravity) {
+                System.out.println("ref is beer, will compare...");
+                ZeroGravity keyChain1 = this;
+                ZeroGravity keyChain2 = (ZeroGravity) obj;
+                if (keyChain1.number == keyChain2.number && keyChain1.brand.equals(keyChain2.brand) && keyChain1.name.equals(keyChain2.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

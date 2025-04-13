@@ -20,4 +20,21 @@ public class chottu {
         System.out.println("The original hashCode :"+super.hashCode());
         return 106;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof chottu) {
+                System.out.println("ref is beer, will compare...");
+                chottu chottu1 = this;
+                chottu chottu2 = (chottu) obj;
+                if (chottu1.number == chottu2.number && chottu1.brand.equals(chottu2.brand) && chottu1.name.equals(chottu2.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

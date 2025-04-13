@@ -36,4 +36,21 @@ public class ZigzagPattern {
         System.out.println("The original hashCode :"+super.hashCode());
         return 100;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof ZigzagPattern) {
+                System.out.println("ref is beer, will compare...");
+                ZigzagPattern keyChain1 = this;
+                ZigzagPattern keyChain2 = (ZigzagPattern) obj;
+                if (keyChain1.number == keyChain2.number && keyChain1.brand.equals(keyChain2.brand) && keyChain1.name.equals(keyChain2.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

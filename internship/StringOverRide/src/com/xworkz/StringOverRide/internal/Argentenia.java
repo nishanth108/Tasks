@@ -20,4 +20,20 @@ public class Argentenia {
         System.out.println("The original hashCode :"+super.hashCode());
         return 78;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(obj!=null) {
+            System.out.println("The reference is not null");
+            if(obj instanceof Argentenia) {
+                Argentenia argentenia1 = this;
+                Argentenia argentenia2 = (Argentenia) obj;
+                if(argentenia1.brand.equals(argentenia2.brand) && argentenia1.name.equals(argentenia2.name) && argentenia1.number == argentenia2.number) {
+                    return true;
+                }
+
+            }
+        }
+        return false;
+    }
 }

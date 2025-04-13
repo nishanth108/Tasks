@@ -36,4 +36,21 @@ public class ZookeeperManager {
         System.out.println("The original hashCode :"+super.hashCode());
         return 108;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof ZookeeperManager) {
+                System.out.println("ref is beer, will compare...");
+                ZookeeperManager keyChain1 = this;
+                ZookeeperManager keyChain2 = (ZookeeperManager) obj;
+                if (keyChain1.number == keyChain2.number && keyChain1.brand.equals(keyChain2.brand) && keyChain1.name.equals(keyChain2.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

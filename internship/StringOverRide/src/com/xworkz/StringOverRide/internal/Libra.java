@@ -20,4 +20,21 @@ public class Libra {
         System.out.println("The original hashCode :"+super.hashCode());
         return 65;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Libra) {
+                System.out.println("ref is beer, will compare...");
+                Libra libra1 = this;
+                Libra libra2 = (Libra) obj;
+                if (libra1.number == libra2.number && libra1.brand.equals(libra2.brand) ) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

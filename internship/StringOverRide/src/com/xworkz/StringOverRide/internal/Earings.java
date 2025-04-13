@@ -19,4 +19,21 @@ public class Earings {
         System.out.println("The original hashCode :"+super.hashCode());
         return 51;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Earings) {
+                System.out.println("ref is beer, will compare...");
+                Earings earing1 = this;
+                Earings earing2 = (Earings) obj;
+                if (earing1.number == earing2.number && earing1.brand.equals(earing2.brand) && earing1.name.equals(earing2.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

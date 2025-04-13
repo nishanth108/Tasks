@@ -22,5 +22,26 @@ public class Android {
         System.out.println("The original hashCode :"+super.hashCode());
         return 68;
     }
+
+        @Override
+        public boolean equals(Object obj) {
+            if(obj!=null)
+            {
+                System.out.println("ref is not null");
+                if(obj instanceof Android)
+                {
+                    System.out.println("ref is beer, will compare...");
+                    Android beer1=this;
+                    Android beer2=(Android) obj;
+                    if(beer1.number == beer2.number && beer1.brand.equals(beer2.brand) && beer1.name.equals(beer2.name))
+                    {
+                        System.out.println("both beers are same");
+                        return true;
+                    }
+                }
+            }
+            return false;
+
+    }
 }
 

@@ -36,4 +36,21 @@ public class ZipCodeFinder {
         System.out.println("The original hashCode :"+super.hashCode());
         return 103;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof ZipCodeFinder) {
+                System.out.println("ref is beer, will compare...");
+                ZipCodeFinder keyChain1 = this;
+                ZipCodeFinder keyChain2 = (ZipCodeFinder) obj;
+                if (keyChain1.number == keyChain2.number && keyChain1.brand.equals(keyChain2.brand) && keyChain1.name.equals(keyChain2.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
 }

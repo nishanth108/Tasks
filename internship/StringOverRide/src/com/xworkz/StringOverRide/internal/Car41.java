@@ -22,4 +22,21 @@ public class Car41 {
         return 111;
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (obj != null) {
+            System.out.println("ref is not null");
+            if (obj instanceof Car41) {
+                System.out.println("ref is beer, will compare...");
+                Car41 car411 = this;
+                Car41 car412 = (Car41) obj;
+                if (car411.number == car412.number && car411.brand.equals(car412.brand) && car411.name.equals(car412.name)) {
+                    System.out.println("both beers are same");
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
 }
